@@ -20,7 +20,6 @@ def polygon(t,length,n):
 #polygon(bob,10,200)
 
 def polyline(t,length,n,angle):
-    angle = 360/n
     for i in range(n):
         t.fd(length)
         t.lt(angle)
