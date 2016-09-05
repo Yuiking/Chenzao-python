@@ -41,8 +41,6 @@ def arc(t, r, angle):
         n = int(arc_length / 4) + 1
         step_length = arc_length / n
         step_angle = float(angle) / n
-        # making a slight left turn before starting reduces
-        # the error caused by the linear approximation of the arc
         t.lt(step_angle / 2)
         polyline(t, step_length, n, step_angle)
         t.rt(step_angle / 2)
