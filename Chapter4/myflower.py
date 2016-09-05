@@ -1,20 +1,23 @@
 from __future__ import print_function, division
 
-from mypolygon import  arc
 import turtle
-
-bob = turtle.Turtle()
+from basic import arc
 
 def petal(t,r,angel):
     for i in range(2):
-        t.lt(angel)
-        t.fd(10)
         arc(t,r,angel)
-        t.rt(180-angel)
+        t.lt(180-angel)
 
-print(bob)
+def flower(t,n,r,angle):
+    for i in range(n):
+        petal(t,r,angle)
+        t.lt(360.0/n)
 
-petal(bob,30,60)
+bob = turtle.Turtle()
 
+flower(bob,8,100,80)
+
+
+# wait for the user to close the window
 turtle.mainloop()
 

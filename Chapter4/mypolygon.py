@@ -32,6 +32,8 @@ def polyline(t,length,n,angle):
         t.fd(length)
         t.lt(angle)
 
+
+
 def arc(t, r, angle):
     """Draws a arc with the given radius and angle.
     :param t: Turtle
@@ -66,6 +68,16 @@ bob = turtle.Turtle()
 #polygon(bob,40,9)
 
 #polyline(bob,40,6,30)
+
+
+def petal(t,r,angel):
+    for i in range(2):
+        t.lt(angel)
+        t.fd(10)
+        arc(t,r,angel)
+        t.rt(180-angel)
+
+petal(bob,30,60)
 
 # wait for the user to close the window
 turtle.mainloop()
