@@ -30,6 +30,4 @@ end.hour = 6 + (52 + minites)/60 #求时数
 end.minite = (52 + minites)%60#求分数
 end.second = seconds #求秒数
 
-
-print "回家吃饭的时间为：","end.print_tiem()"
-
+print "回家吃饭的时间为：";end.print_tiem()
