@@ -20,8 +20,16 @@ time2 = 7*60 + 12 #节奏跑每公里所需秒数
 minites = (time1*2 + time2*3)/60 #总共所需分钟数
 seconds = (time1*2 + time2*3)%60#求余下的秒数
 
-end_hour = 6 + (52 + minites)/60 #求时数
-end_minite = (52 + minites)%60#求分数
-end_second = seconds #求秒数
+#定义时间的类和打印时间的函数
+class time:
+     def print_tiem(time):
+         print ('%.2d:%.2d:%.2d' % (time.hour,time.minite,time.second))
 
-print "回家吃饭的时间为：",end_hour,":",end_minite,":",end_second
+end = time()#定义end数组
+end.hour = 6 + (52 + minites)/60 #求时数
+end.minite = (52 + minites)%60#求分数
+end.second = seconds #求秒数
+
+
+print "回家吃饭的时间为：",end.print_tiem()
+

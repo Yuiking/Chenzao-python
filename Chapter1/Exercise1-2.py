@@ -3,10 +3,6 @@
 
 __author__ = 'Yui'
 
-import time
-import datetime
-
-
 print "你好，世界"
 
 #42分42秒总秒数
