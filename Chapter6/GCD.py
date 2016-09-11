@@ -8,4 +8,4 @@ def gcd(a,b):
         print (b,m)
         return gcd(b,m)
 
-print gcd(6,6)
+print gcd(96,-13)
