@@ -2,7 +2,9 @@
 #####趁早python小分队作业
 -----------
 ###第一次作业
+
 [前4章笔记](https://github.com/Yuiking/Chenzao-python/blob/master/homeworks/notes1-4.md)
+
 =====
 ###第二次作业
 [第五章笔记](https://github.com/Yuiking/Chenzao-python/blob/master/homeworks/notes5.md)
